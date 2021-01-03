@@ -1,0 +1,5 @@
+select * from dbo.Student s
+join dbo.StudentToSubject st on s.ID=st.ID
+join dbo.Teacher t on t.ID=st.TeacherID
+join dbo.Subject sub on sub.ID=t.SubjectID
+where s.Name=N'გიორგი'
